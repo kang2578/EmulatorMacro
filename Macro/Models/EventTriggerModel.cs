@@ -31,8 +31,6 @@ namespace Macro.Models
             EventToNext = model.EventToNext;
             _triggerIndex = 0;
             SameImageDrag = model.SameImageDrag;
-            MaxSameImageCount = model.MaxSameImageCount;
-            
         }
     }
 }

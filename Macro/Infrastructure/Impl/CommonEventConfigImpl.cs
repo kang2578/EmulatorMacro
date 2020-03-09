@@ -233,6 +233,7 @@ namespace Macro.View
                 btnMouseCoordinate.IsEnabled = true;
 
                 checkSameImageDrag.Visibility = Visibility.Collapsed;
+                checkSameImageDrag.IsChecked = false;
                 numMaxSameImageCount.Visibility = Visibility.Collapsed;
                 //btnMouseWheel.Visibility = Visibility.Visible;
                 //btnMouseWheel.IsEnabled = false;
@@ -246,6 +247,7 @@ namespace Macro.View
                 btnMouseCoordinate.IsEnabled = false;
 
                 checkSameImageDrag.Visibility = Visibility.Collapsed;
+                checkSameImageDrag.IsChecked = false;
                 numMaxSameImageCount.Visibility = Visibility.Collapsed;
                 //btnMouseWheel.Visibility = Visibility.Collapsed;
                 //btnMouseWheel.IsEnabled = false;
@@ -262,6 +264,7 @@ namespace Macro.View
                 btnMouseCoordinate.IsEnabled = false;
 
                 checkSameImageDrag.Visibility = Visibility.Collapsed;
+                checkSameImageDrag.IsChecked = false;
                 numMaxSameImageCount.Visibility = Visibility.Collapsed;
                 //btnMouseWheel.Visibility = Visibility.Collapsed;
                 //btnMouseWheel.IsEnabled = false;
@@ -272,6 +275,8 @@ namespace Macro.View
             else if (CurrentTreeViewItem.DataContext<EventTriggerModel>().EventType == EventType.Image)
             {
                 checkSameImageDrag.Visibility = Visibility.Visible;
+                checkSameImageDrag.IsChecked = false;
+                numMaxSameImageCount.Visibility = Visibility.Collapsed;
 
                 btnMouseCoordinate.Visibility = Visibility.Collapsed;
                 btnMouseCoordinate.IsEnabled = false;
@@ -288,6 +293,7 @@ namespace Macro.View
                 btnMouseCoordinate.IsEnabled = false;
 
                 checkSameImageDrag.Visibility = Visibility.Collapsed;
+                checkSameImageDrag.IsChecked = false;
                 numMaxSameImageCount.Visibility = Visibility.Collapsed;
                 //btnMouseWheel.Visibility = Visibility.Visible;
                 //btnMouseWheel.IsEnabled = false;
